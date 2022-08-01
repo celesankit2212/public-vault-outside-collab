@@ -1,0 +1,10 @@
+os: linux
+dist: focal
+jobs.include:
+  - vault:
+      api_url: $VAULT_ADRESS
+    token:
+      secure: $TOKEN
+language: python
+script:
+  - python hello_world.py
