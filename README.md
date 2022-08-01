@@ -1,0 +1,1 @@
+# public-hashicorp-check
