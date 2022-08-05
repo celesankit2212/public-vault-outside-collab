@@ -6,9 +6,13 @@ jobs.include:
       api_url: $VAULT_ADDR
       token:
         secure: $VAULT_TOKEN
+      secrets:
+        - kv_api_ver: kv2
+        - namespace:
+          - name: ns1
 script:
   - python hello_world.py
-  - vault status
+#   - vault status
 #       script:
 #   #       - python hello_world.py
 #         - vault status
