@@ -5,9 +5,9 @@ jobs:
   include:
     - before_script:
       - vault:
-          api_url: $VAULT_ADRESS
+          api_url: $VAULT_ADDR
         token:
-          secure: $TOKEN
+          secure: $VAULT_TOKEN
       - echo vault status
 #       script:
 #   #       - python hello_world.py
