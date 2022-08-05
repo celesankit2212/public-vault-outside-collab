@@ -1,15 +1,14 @@
 os: linux
 dist: focal
 language: python
-jobs:
-  include:
-    - vault:
-        api_url: $VAULT_ADDR
+jobs.include:
+  - vault:
+      api_url: $VAULT_ADDR
       token:
         secure: $VAULT_TOKEN
-    - script:
-      - python hello_world.py
-#       - echo vault status
+script:
+  - python hello_world.py
+  - echo vault status
 #       script:
 #   #       - python hello_world.py
 #         - vault status
