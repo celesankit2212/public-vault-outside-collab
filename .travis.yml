@@ -9,6 +9,7 @@ jobs.include:
       secrets:
         - kv_api_ver: kv2
         - namespace:
+          - vault status
           - name: ns1
 script:
   - python hello_world.py
