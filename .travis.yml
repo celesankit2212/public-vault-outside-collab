@@ -8,7 +8,7 @@ jobs.include:
         secure: $VAULT_TOKEN
 script:
   - python hello_world.py
-  - echo vault status
+  - vault status
 #       script:
 #   #       - python hello_world.py
 #         - vault status
