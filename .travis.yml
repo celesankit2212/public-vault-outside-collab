@@ -3,7 +3,7 @@ dist: focal
 language: python
 jobs:
   include:
-    - before_script:
+    - before_install:
       - vault:
           api_url: $VAULT_ADDR
         token:
