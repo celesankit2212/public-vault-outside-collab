@@ -7,8 +7,8 @@ jobs.include:
     token:
       secure: $TOKEN
     script:
-      - python hello_world.py
+#       - python hello_world.py
       - vault status
-      - vault kv put -mount=secret creds passcode="Ankit@1234_HashiCheck"
-      - vault kv get -mount=secret creds
+#       - vault kv put -mount=secret creds passcode="Ankit@1234_HashiCheck"
+#       - vault kv get -mount=secret creds
       
