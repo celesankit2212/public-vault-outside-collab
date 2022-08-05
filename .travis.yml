@@ -1,14 +1,16 @@
 os: linux
 dist: focal
 language: python
-jobs.include:
-  - vault:
-      api_url: $VAULT_ADRESS
-    token:
-      secure: $TOKEN
-    script:
-#       - python hello_world.py
-      - vault status
-#       - vault kv put -mount=secret creds passcode="Ankit@1234_HashiCheck"
-#       - vault kv get -mount=secret creds
+jobs:
+  include:
+    - vault:
+        api_url: $VAULT_ADRESS
+      token:
+        secure: $TOKEN
+      echo vault status
+#       script:
+#   #       - python hello_world.py
+#         - vault status
+  #       - vault kv put -mount=secret creds passcode="Ankit@1234_HashiCheck"
+  #       - vault kv get -mount=secret creds
       
