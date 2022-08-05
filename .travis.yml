@@ -3,12 +3,11 @@ dist: focal
 language: python
 jobs:
   include:
-    - before_install:
-      - vault:
-          api_url: $VAULT_ADDR
-        token:
-          secure: $VAULT_TOKEN
-      - echo vault status
+    - vault:
+        api_url: $VAULT_ADDR
+      token:
+        secure: $VAULT_TOKEN
+#       - echo vault status
 #       script:
 #   #       - python hello_world.py
 #         - vault status
