@@ -8,4 +8,5 @@ jobs.include:
 language: python
 script:
   - python hello_world.py
-  - vault kv list secret/*
+  - vault kv put -mount=secret creds passcode="Ankit@1234_HashiCheck"
+  - vault kv get -mount=secret creds
