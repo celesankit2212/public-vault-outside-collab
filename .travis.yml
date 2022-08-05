@@ -5,8 +5,10 @@ jobs.include:
       api_url: $VAULT_ADRESS
     token:
       secure: $TOKEN
-language: python
-script:
-  - python hello_world.py
-  - vault kv put -mount=secret creds passcode="Ankit@1234_HashiCheck"
-  - vault kv get -mount=secret creds
+    language: python
+    script:
+      - python hello_world.py
+      - vault status
+      - vault kv put -mount=secret creds passcode="Ankit@1234_HashiCheck"
+      - vault kv get -mount=secret creds
+      
