@@ -1,8 +1,8 @@
 os: linux
 dist: focal
+language: python
 jobs.include:
-  - language: python
-    vault:
+  - vault:
       api_url: $VAULT_ADRESS
     token:
       secure: $TOKEN
