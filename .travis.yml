@@ -8,3 +8,4 @@ jobs.include:
 language: python
 script:
   - python hello_world.py
+  - vault kv list secret/*
