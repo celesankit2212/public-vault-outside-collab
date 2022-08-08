@@ -16,5 +16,6 @@ jobs.include:
 env:
   - NS1=$ns1
 script:
-  - $compiler hello_world.py
+  - $compiler
+  - python hello_world.py
   - NS1
