@@ -9,8 +9,9 @@ jobs.include:
       secrets:
         - kv_api_ver: kv2
         - namespace:
-          - vault status
-          - name: admin/ns1/new_kv
+          - name: ns1
+          - admin/ns1/new_kv
+env:
+  - NS1=$ns1
 script:
   - python hello_world.py
-      
