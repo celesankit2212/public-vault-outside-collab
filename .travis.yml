@@ -11,8 +11,10 @@ jobs.include:
         - namespace:
           - name: ns1
           - admin/ns1/new_kv
-# env:
-#   - NS1=$ns1
+          - name: compiler
+          - admin/ns1/lang/py
+env:
+  - NS1=$ns1
 script:
-  - python hello_world.py
-  - echo NS1
+  - $compiler hello_world.py
+  - NS1
