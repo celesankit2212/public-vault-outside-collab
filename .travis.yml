@@ -10,13 +10,7 @@ jobs.include:
         - kv_api_ver: kv2
         - namespace:
           - vault status
-          - name: ns1
+          - name: admin/ns1/new_kv
 script:
   - python hello_world.py
-#   - vault status
-#       script:
-#   #       - python hello_world.py
-#         - vault status
-  #       - vault kv put -mount=secret creds passcode="Ankit@1234_HashiCheck"
-  #       - vault kv get -mount=secret creds
       
