@@ -14,7 +14,7 @@ jobs.include:
           - name: compiler
           - admin/ns1/lang/py
 env:
-  - NS1=$ns1
+  - NS1=$NS1
 script:
   - $compiler
   - python hello_world.py
