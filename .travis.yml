@@ -9,15 +9,10 @@ jobs.include:
       secrets:
         - kv_api_ver: kv2
         - namespace:
-          - name: ns1
-          - admin/ns1/
-          - name: compiler
-          - admin/python/
+          - name: admin
+          - $NS1=ns1/new_kv/cred/token1
 env:
-  - $ns1
-before_script:
-  - NS1= $compiler
+  - NS1
 script:
-  - $compiler
   - python hello_world.py
   - echo NS1
