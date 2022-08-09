@@ -13,11 +13,11 @@ jobs.include:
           - $NS1=ns1/new_kv/cred/token1
           
   - before_script:
-    - $NS2 = "PYTHON ENV"
+    - NS2 = "PYTHON ENV"
 env:
-  - env1 = $NS1
-  - env2 = $NS2
+  - $NS1
+  - NS2
 script:
   - python hello_world.py
   - $NS1
-  - $NS2
+  - NS2
