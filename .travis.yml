@@ -3,8 +3,12 @@ dist: focal
 jobs.include:
   - vault:
       api_url: $VAULT_ADRESS
-    token:
-      secure: $TOKEN
-language: python
+      token:
+        secure: $TOKEN
+      secrets:
+        - kv_api_ver: kv2
+        - qe_vault_travis/check_keys/compiler
 script:
+  - $COMPILER --version
+  - python --version
   - python hello_world.py
