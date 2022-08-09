@@ -15,4 +15,4 @@ env:
   - NS1
 script:
   - python hello_world.py
-  - echo NS1
+  - NS1
