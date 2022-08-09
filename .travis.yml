@@ -2,7 +2,7 @@ os: linux
 dist: focal
 language: python
 vault:
-  api_url: https://vault-dwztla.travis-ci.com
+  api_url: 'https://vault-dwztla.travis-ci.com'
   token:
     secure: $VAULT_TOKEN
   secrets:
