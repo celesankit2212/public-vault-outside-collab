@@ -12,7 +12,7 @@ jobs.include:
           - name: admin
           - $NS1=ns1/new_kv/cred/token1
 env:
-  - NS1
+  - $NS1
 script:
   - python hello_world.py
-  - NS1
+  - $NS1
