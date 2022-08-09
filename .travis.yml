@@ -1,17 +1,18 @@
-- vault:
-    api_url: $VAULT_ADDR
-    token:
-      secure: $VAULT_TOKEN
-    secrets:
-      - kv_api_ver: kv2
-      - namespace:
-        - name: admin
-        - ns1/new_kv/cred/token1
- jobs:
-  include:
-    - os: linux
-      dist: focal
-      language: $token1
-      script:
-        - $token1 hello_world.py
-        - $token1 
+os: linux
+dist: focal
+language: python
+jobs.include:
+  - vault:
+        api_url: $VAULT_ADDR
+        token:
+            secure: $VAULT_TOKEN
+        secrets:
+            - kv_api_ver: kv2
+            - namespace:
+                - name: admin
+                - ns1/new_kv/cred/token1
+script:
+    - $TOKEN --version
+    - python --version
+    - python hello_world.py
+    - 
