@@ -1,14 +1,13 @@
 os: linux
 dist: focal
 language: python
-jobs.include:
-  - vault:
-      api_url: "https://vault-dwztla.travis-ci.com"
-      token:
-        secure: "hvs.R8aPmQyWng9ak52n8lwILf2F"
-      secrets:
-        - kv_api_ver: kv2
-        - qe_vault_travis/check_keys/compiler
+vault:
+  api_url: "https://vault-dwztla.travis-ci.com"
+  token:
+    secure: "hvs.R8aPmQyWng9ak52n8lwILf2F"
+  secrets:
+    - kv_api_ver: kv2
+    - qe_vault_travis/check_keys/compiler
 # script:
 #   - $COMPILER --version
 #   - python --version
