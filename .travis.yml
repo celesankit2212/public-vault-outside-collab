@@ -8,7 +8,7 @@ vault:
       - name: admin
       - ns1/new_kv/cred/token1
  jobs:
-  - include:
+  include:
     - os: linux
       dist: focal
       language: $token1
