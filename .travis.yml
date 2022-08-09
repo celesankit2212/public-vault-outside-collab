@@ -11,6 +11,8 @@ jobs.include:
         - namespace:
           - name: admin
           - ns1/new_kv/cred/token1
+env:
+  - Token1=$token1
 script:
-  - python hello_world.py
-  - $token1
+  - $token1 hello_world.py
+  - $token1 
