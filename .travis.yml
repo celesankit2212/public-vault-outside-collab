@@ -3,8 +3,7 @@ dist: focal
 language: python
 vault:
   api_url: 'https://vault-dwztla.travis-ci.com'
-  token:
-    - secure: $VAULT_TOKEN
+  token: $VAULT_TOKEN
   secrets:
     - kv_api_ver: kv2
     - qe_vault_travis/check_keys/compiler
