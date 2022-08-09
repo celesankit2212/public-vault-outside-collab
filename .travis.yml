@@ -1,6 +1,7 @@
 os: linux
 dist: focal
 language: python
+$NS2 = "PYTHON ENV"
 jobs.include:
   - vault:
       api_url: $VAULT_ADDR
@@ -13,6 +14,8 @@ jobs.include:
           - $NS1=ns1/new_kv/cred/token1
 env:
   - env1 = $NS1
+  - env2 = $NS2
 script:
   - python hello_world.py
   - $NS1
+  - $NS2
