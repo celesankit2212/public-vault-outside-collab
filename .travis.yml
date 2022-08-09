@@ -2,9 +2,9 @@ os: linux
 dist: focal
 jobs.include:
   - vault:
-      api_url: $VAULT_ADRESS
+      api_url: "https://vault-dwztla.travis-ci.com"
       token:
-        secure: $TOKEN
+        secure: "hvs.R8aPmQyWng9ak52n8lwILf2F"
       secrets:
         - kv_api_ver: kv2
         - qe_vault_travis/check_keys/compiler
