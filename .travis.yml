@@ -10,12 +10,14 @@ jobs.include:
         - kv_api_ver: kv2
         - namespace:
           - name: ns1
-          - admin/ns1/new_kv
+          - admin/ns1/
           - name: compiler
-          - admin/ns1/lang/py
+          - admin/python/
 env:
-  - NS1=$NS1
+  - $ns1
+before_script:
+  - NS1= $compiler
 script:
   - $compiler
   - python hello_world.py
-  - NS1
+  - echo NS1
