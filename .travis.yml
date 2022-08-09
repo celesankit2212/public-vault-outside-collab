@@ -10,14 +10,7 @@ jobs.include:
         - kv_api_ver: kv2
         - namespace:
           - name: admin
-          - ns1/new_kv/cred/token1 == 'ankit'
-          
-before_script:
-  - NS2 = "PYTHON ENV"
-env:
-  - $NS1
-  - NS2
+          - ns1/new_kv/cred/token1
 script:
   - python hello_world.py
-  - $NS1
-  - NS2
+  - 'ankit' == $token1
