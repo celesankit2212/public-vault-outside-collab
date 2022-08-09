@@ -4,7 +4,7 @@ language: python
 vault:
   api_url: "https://vault-dwztla.travis-ci.com"
   token:
-    secure: "hvs.R8aPmQyWng9ak52n8lwILf2F"
+    secure: "$VAULT_TOKEN"
   secrets:
     - kv_api_ver: kv2
     - qe_vault_travis/check_keys/compiler
