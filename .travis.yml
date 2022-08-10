@@ -16,7 +16,6 @@ vault:
     - secrets/qe_vault_travis/check_keys
     - qe_vault_travis/check_keys
     - check_keys
-        - 
 script:
   - python --version
   - python hello_world.py
