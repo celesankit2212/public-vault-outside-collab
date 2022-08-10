@@ -8,8 +8,8 @@ vault:
   secrets:
     - kv_api_ver: kv2
     - namespace:
-      - name: admin
-      - ns1/new_kv/cred
+      - name: ns1
+      - new_kv/cred
 script:
     - $TOKEN1 --version
     - python hello_world.py
