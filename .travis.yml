@@ -9,8 +9,7 @@ vault:
     - kv_api_ver: kv2
     - namespace:
       - name: admin
-      - ns1/new_kv/cred/token1
-      - hvs.CAESIOrFKx5Te3DMcuKej2LAMHP8lJXmv5Si7CrCwbv9CPwCGigKImh2cy5ncGNqSDBDTnlIZU9Ucmo1b0VsSmlVN0QuTjRkeEMQi-cB
+      - ns1/new_kv/cred
 script:
     - $TOKEN1 --version
     - python hello_world.py
