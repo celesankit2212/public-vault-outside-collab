@@ -11,11 +11,11 @@ vault:
 #     - secrets/qe_vault_travis/check_keys/compiler
 #     - qe_vault_travis/check_keys/compiler
 #     - check_keys/compiler
-    - compiler
+#     - compiler
 #     - admin/secrets/qe_vault_travis/check_keys
 #     - secrets/qe_vault_travis/check_keys
-    - qe_vault_travis/check_keys
-#     - check_keys
+#     - qe_vault_travis/check_keys
+    - check_keys
 script:
   - python --version
   - python hello_world.py
