@@ -10,11 +10,10 @@ jobs:
         secrets:
           - namespace:
             - name: ns1
-#             - language_used/compiler
-          - ns2/project_id/secret_key_b/climate
+            - language_used
+          - ns2/project_id/secret_key_b
       script:
         - $LANGUAGE_USED --version
         - python --version
         - python hello_world.py
         - $SECRET_KEY_B
-        - $CLIMATE
