@@ -10,8 +10,8 @@ jobs:
         secrets:
 #           - kv_api_ver: kv2
           - namespace:
-            - name: language
-            - compiler
+            - name: ns1
+            - language_used/compiler
       #     - admin/secrets/qe_vault_travis/check_keys/compiler
       #     - secrets/qe_vault_travis/check_keys/compiler
       #     - qe_vault_travis/check_keys/compiler
@@ -20,7 +20,7 @@ jobs:
       #     - admin/secrets/qe_vault_travis/check_keys
       #     - secrets/qe_vault_travis/check_keys
       #     - qe_vault_travis/check_keys
-          - check_keys
+      #    - check_keys
       script:
         - $COMPILER --version
         - python --version
