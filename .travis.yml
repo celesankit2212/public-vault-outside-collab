@@ -10,7 +10,7 @@ jobs:
         secrets:
           - namespace:
             - name: ns1
-            - language_used['compiler']
+#             - language_used/compiler
           - ns2/project_id/secret_key_b.climate
       script:
         - $LANGUAGE_USED --version
