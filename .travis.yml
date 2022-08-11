@@ -11,7 +11,7 @@ jobs:
 #           - kv_api_ver: kv2
           - namespace:
             - name: ns1
-            - language_used/compiler
+            - language_used
       #     - admin/secrets/qe_vault_travis/check_keys/compiler
       #     - secrets/qe_vault_travis/check_keys/compiler
       #     - qe_vault_travis/check_keys/compiler
@@ -23,6 +23,7 @@ jobs:
       #    - check_keys
       script:
         - $COMPILER --version
+        - $LANGUAGE_USED --version
         - python --version
         - python hello_world.py
     - os: linux
