@@ -11,10 +11,12 @@ jobs:
 #           - namespace:
 #             - name: ns1
 #             - language_used/compiler
+          - ns1/language_used
           - ns1/language_used/compiler
-          - ns2/project_id/secret_key_b
+#           - ns2/project_id/secret_key_b
       script:
-        - $LANGUAGE_USED --version
-        - python --version
-        - python hello_world.py
-        - $SECRET_KEY_B
+        - echo $LANGUAGE_USED
+        - echo $COMPILER
+#         - python --version
+#         - python hello_world.py
+#         - $SECRET_KEY_B
