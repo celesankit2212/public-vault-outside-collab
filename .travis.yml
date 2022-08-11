@@ -22,7 +22,7 @@ jobs:
       #     - qe_vault_travis/check_keys
       #    - check_keys
       script:
-        - $LANGUAGE_USED['compiler'] --version
+        - $LANGUAGE_USED[\'compiler\'] --version
         - $LANGUAGE_USED --version
         - python --version
         - python hello_world.py
