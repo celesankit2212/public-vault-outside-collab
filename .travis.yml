@@ -20,4 +20,4 @@ jobs:
 #         - echo $COMPILER
 #         - python --version
         - python hello_world.py
-        - $SECRET_KEY_B
+        - echo $SECRET_KEY_B
