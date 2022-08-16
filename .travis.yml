@@ -5,19 +5,19 @@ jobs:
       language: python
       vault:
         api_url: https://vault-dwztla.travis-ci.com
-        token: 
-          secure: "Rvgykwcfwv8eJr58uFSstP2grDLiqLZ7qSuZhvypYwiCbYApFAV+AOhQhllNUQ9EjvHqIdlKksAn1t3xsrOezDh1Bv8fQgzK2R6ywGYiaRCLAwMMijOnnbxIBfWZmWr3kKS1C+BrIWcPj/EZxvhtdCRxup5TG1otOOnljXYEj6J0bN7HhJVz9LdUvdRo80UiW+aLcVp/sqkvF8vxNNHMhPPNqMEB5jzekbK1jG8moml/fY37qoWd0K3SmwJ4XDFRjisRX0gIP1SABUrMA0oKKGB5a8MONxjeYIXGa2VhEmDKY2yxVIvFvN5S4WPWV9XdAvKqcGhMbj3+3bQ9a/GnGbSk898GYFGUZul1BTj8qZYyzAmcvjJSBWj6CON2mU8Eez8klq9ei/akR4RzKieXygzFoBas/m3zfret/W87HRkS60wvN3x5tyjHUwYcmwaSPrhxgtH4Z0iVF4uVjnMmApFbx8foDer6i7jer5Lq7vkqg8VbVjdjz1crXYu5F4dYrcW88OlyBbPUxRP9lufb2uImhep/KBdvQZ32QApjdTg+yCnDTAbSJ39Vw4unf/2eqvOMl6ubm9rAU6O3RIMDYRP4NxT9ebx/Qe23RSq2aAlhK3jygSMxG7rzBYq6NEjeWOgh80wEMzvnJkTfzBJ5MUHwrOP00qOclCHye8h1Y8k="
+        token: hvs.R8aPmQyWng9ak52n8lwILf2F
+#           secure: "Rvgykwcfwv8eJr58uFSstP2grDLiqLZ7qSuZhvypYwiCbYApFAV+AOhQhllNUQ9EjvHqIdlKksAn1t3xsrOezDh1Bv8fQgzK2R6ywGYiaRCLAwMMijOnnbxIBfWZmWr3kKS1C+BrIWcPj/EZxvhtdCRxup5TG1otOOnljXYEj6J0bN7HhJVz9LdUvdRo80UiW+aLcVp/sqkvF8vxNNHMhPPNqMEB5jzekbK1jG8moml/fY37qoWd0K3SmwJ4XDFRjisRX0gIP1SABUrMA0oKKGB5a8MONxjeYIXGa2VhEmDKY2yxVIvFvN5S4WPWV9XdAvKqcGhMbj3+3bQ9a/GnGbSk898GYFGUZul1BTj8qZYyzAmcvjJSBWj6CON2mU8Eez8klq9ei/akR4RzKieXygzFoBas/m3zfret/W87HRkS60wvN3x5tyjHUwYcmwaSPrhxgtH4Z0iVF4uVjnMmApFbx8foDer6i7jer5Lq7vkqg8VbVjdjz1crXYu5F4dYrcW88OlyBbPUxRP9lufb2uImhep/KBdvQZ32QApjdTg+yCnDTAbSJ39Vw4unf/2eqvOMl6ubm9rAU6O3RIMDYRP4NxT9ebx/Qe23RSq2aAlhK3jygSMxG7rzBYq6NEjeWOgh80wEMzvnJkTfzBJ5MUHwrOP00qOclCHye8h1Y8k="
         secrets:
           - kv_api_ver: kv2
-#           - namespace:
-#             - name: ns1
-#             - language_used/compiler
-          - ns1/language_used
-          - ns1/language_used/compiler
-#           - ns2/project_id/secret_key_b
+          - namespace:
+            - name: ns1
+            - language_used
+#           - ns1/language_used
+#           - ns1/language_used/compiler
+          - ns2/project_id/secret_key_b
       script:
         - echo $LANGUAGE_USED
-        - echo $COMPILER
+#         - echo $COMPILER
 #         - python --version
-#         - python hello_world.py
-#         - $SECRET_KEY_B
+        - python hello_world.py
+        - $SECRET_KEY_B
